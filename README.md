@@ -1,5 +1,5 @@
 # provasicredi_
-
+Prova de Conceito de automação utilizando Selenium e JUnit.
 ## Desafio 1 
 ### Observação
 O script deve executar no browser Google Chrome
