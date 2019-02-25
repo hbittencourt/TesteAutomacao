@@ -9,6 +9,12 @@ import pageObjects.AddCustomerPageObject;
 import pageObjects.MainPageObject;
 import utils.WebDriverInstance;
 
+/**
+ *
+ * @author Henrique Bittencourt
+ *
+ **/
+
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 
 public class Desafio1 extends WebDriverInstance {
@@ -17,7 +23,6 @@ public class Desafio1 extends WebDriverInstance {
 
    @Test
    public void task1_TrocarTema() {
-      sleep(1000);
       mainPageObject.comboBoxSelecaoDeTema(driver).sendKeys("Bootstrap V4 Theme");
       Assert.assertEquals("https://www.grocerycrud.com/demo/bootstrap_theme_v4", driver.getCurrentUrl());
    }
@@ -49,7 +54,7 @@ public class Desafio1 extends WebDriverInstance {
    @Test
    public void task4_SalvarDadosEValidarMensagem(){
       addCustomerPageObject.buttonSave(driver).click();
-      sleep(3000);
+      sleep(2000);
       Assert.assertEquals("Your data has been successfully stored into the database. Edit Customer or Go back to list",
               addCustomerPageObject.textMensagemSucesso(driver).getText() );
    }

@@ -9,6 +9,12 @@ import org.openqa.selenium.support.PageFactory;
 import pageObjects.MainPageObject;
 import utils.WebDriverInstance;
 
+/**
+ *
+ * @author Henrique Bittencourt
+ *
+ **/
+
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 
 public class Desafio2 extends WebDriverInstance {
