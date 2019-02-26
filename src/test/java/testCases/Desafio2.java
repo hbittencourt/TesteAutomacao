@@ -62,6 +62,7 @@ public class Desafio2 extends WebDriverInstance {
 
     @Test
     public void task6_ValidaRemocao(){
-        System.out.println(mainPageObject.textConfirmacaoPopUp(driver).getText());
+        sleep(2000);
+        Assert.assertEquals("Your data has been successfully deleted from the database.", mainPageObject.textConfirmacaoPopUp(driver).getText());
     }
 }
