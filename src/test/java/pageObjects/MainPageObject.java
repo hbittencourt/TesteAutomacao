@@ -4,6 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+/**
+ *
+ * @author Henrique Bittencourt
+ *
+ **/
+
 public class MainPageObject {
 
     public WebElement comboBoxSelecaoDeTema(WebDriver driver){
@@ -47,7 +53,7 @@ public class MainPageObject {
     }
 
     public WebElement textConfirmacaoPopUp(WebDriver driver){
-        String xpath = "//p[contains(text(),'Your data has been successfully deleted from the database.')]";
+        String xpath = "//span[3]/p";
         return driver.findElement(By.xpath(xpath));
     }
 
